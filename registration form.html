@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+content="width=device-width",initial-scale=1.0">
+<title>Studentregistration form</title>
+<style>
+    label {
+        display: block;
+        margin-bottom: 0cap;
+    }
+    input,select{
+        margin-bottom: auto;
+        padding: 0cqw;
+        width: 300px;
+    }
+    .form-group{
+        margin: bottom 20px;
+    }
+    button{
+        padding: 10px 20px;
+        background-color: azure;
+    colour:white;
+    border-radius: 0cqi;
+    cursor: pointer;
+    margin: right 16px;
+    }
+    button:hover{
+        background-color: blue;
+    }
+</style>
+    </head>
+    <body>
+        <h2>Student registration form </h2>
+        <form action="#method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dod" name"dob" required>
+            </div>
+            <div class="form-group">
+                <label>gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" requied>
+                <label for="female">Female</label><br>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for ="other">Other</label>
+  <input type="radio" id="other" name="gender" value="other" required>
+  </div>
+  <div class="form-group">
+    <label for ="address">address</label>
+   <input type="text" id="address" name="address" required>
+   </div>
+   <div class="form-group">
+    <label for="telephone">Telephone</label>
+    <input type="tel" id="telephone "  name="telephone"  required>
+   </div>
+   <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+   </div>
+   <div class="form-group">
+    <label for="course">Course</label>
+    <input type="text" id="course" name="course" required>
+   </div>
+   <button type="submit" name="submit">Register</button>
+   <button type="button" onclick="cancelregistration()">Cancel</button>
+   </form>
+   <script>
+    function cancelregistration(){//alert("registration cancelled!");}
+   </script>
+   </body>
+</html>
